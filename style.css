@@ -1,0 +1,158 @@
+/* Font imported from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+
+/* Global CSS ================================================ */
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family:'Fjalla One', sans-serif;;
+    font-size: 15px;
+}
+
+body {
+    background: url(https://media.giphy.com/media/wwg1suUiTbCY8H8vIA/giphy.gif);
+}
+
+
+#expense-tracker {
+    height: auto;
+    width: 500px;
+    background-color: whitesmoke;
+    margin:25px auto;
+    padding: 25px 0;
+    border-radius: 5px;
+    box-shadow:rgb(100, 77, 114) 3px 3px 5px 3px;
+}
+
+.heading {
+    padding: 10px 0;
+    font-size: 30px;
+    background: url(https://media.tenor.com/W96KEAlHdGoAAAAd/dj.gif);
+    background: url(https://media.giphy.com/media/YmzO3P2e4qYkitoVcF/giphy.gif);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sub-heading {
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+/* YOUR BALANCE ==================================== */
+.balance , .balance span {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* TOTAL INCOME AND EXPENSE ============================ */
+.container {
+    display: flex;
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    justify-content: space-around;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px 2px #644d72;
+}
+
+.container div {
+    display: flex;
+    flex-direction: column;
+}
+
+.container div span:nth-child(1) {
+    margin-bottom: 5px;
+}
+
+.container div:nth-child(1) span:nth-child(2) {
+    color: green;
+}
+
+.container div:nth-child(2) span:nth-child(2) {
+    color: red;
+}
+
+/* HISTORY ================================== */
+.history li {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    border: 2px solid white;
+    box-shadow: 1px 1px 1px 1px black;
+    padding: 5px;
+    margin: 5px auto;
+    background: linear-gradient(45deg,#644d72,white);
+}
+
+.history li span:nth-child(1) {
+    color: white;
+    font-family: cursive;
+    font-style: italic;
+}
+
+.history li span:nth-child(2) {
+    padding: 0 10px;
+}
+
+.history li::after {
+    position: absolute;
+    content: '';
+    background-color: white;
+    height: 30px;
+    width: 5px;
+    right: 0;
+    top: 0px;
+}
+
+/* for INCOME */
+.history .incomeLi::after {
+    background-color: green;
+}
+
+/* for EXPENSE  */
+.history .expenseLi::after {
+    background-color: red;
+}
+
+/* NEW TRANSCTION ======================================= */
+.labels {
+    width: 50%;
+    margin: auto;
+    text-align: start;
+}
+
+input[type=text] {
+    width: 50%;
+    height: 30px;
+    text-align: start;
+    padding: 0 5px;
+    margin-bottom: 15px;
+}
+
+/* ADD BUTTON ======================================== */
+.add-btn {
+    background-color: #644d72;
+    color: white;
+    padding: 10px 50px;
+    border: none;
+    box-shadow: 1px 1px 5px 1px black;
+}
+
+/* ERROR --> SHOW AND HIDE FUNCTIONALITY =========================*/
+.error {
+    margin-top: 5px;
+    color: red;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}

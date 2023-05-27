@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+
+    <!-- Favicon icon -->
+    <link rel="icon" href="./images/favicon.png">
+    
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+<body>
+
+    <!-- used inline css for hr tags -->
+
+    <section id="expense-tracker">
+        <h1 class="heading">Expense Tracker</h1>
+        <hr width="50%" style="margin: auto;">
+
+<!-- /* YOUR BALANCE ==================================== */ -->
+        <p class="sub-heading">YOUR BALANCE</p>
+        <p class="balance">$<span>00.00</span></p>
+
+<!-- /* TOTAL INCOME AND EXPENSE ============================ */ -->
+        <div class="container">
+            <div>
+                <span>INCOME</span>
+                <span>$<span class="total-income">00.00</span></span>
+            </div>
+            <div>
+                <span>EXPENSE</span>
+                <span>$<span class="total-expense">00.00</span></span>
+            </div>
+        </div>
+
+<!-- /* HISTORY ================================== */ -->
+        <p class="sub-heading">History</p>
+        <hr width="50%" style="margin: auto;">
+        <ul class="history">
+        </ul>
+     
+<!-- /* NEW TRANSCTION ======================================= */ -->
+        <p class="sub-heading">Add new transction</p>
+        <hr width="50%" style="margin: 5px auto;">
+        <form action="">
+            <div class="labels">
+                <label for="">Text :</label>
+            </div> 
+            <input type="text" placeholder="Enter item" name="item" class="item">
+            <div class="labels">
+                <label for="">Amount :<br>(use '-' for expense, '+' for income)</label>
+            </div>
+            <input type="text" placeholder="Enter amount" name="amount" class="amount"><br>
+
+<!-- /* ADD BUTTON ======================================== */ -->
+            <input type="submit" value="Add transction" class="add-btn">
+            <div class="error hide"></div>
+        </form>
+    </section>
+</body>
+
+<!-- JavaScript file  -->
+<script src="./script.js"></script>
+</html>
